@@ -1,0 +1,64 @@
+{
+  "title": "About",
+  "sections": [
+    { "height": "large", "width": "wide", "align": "center",
+      "blocks": [
+        { "type": "heading", "level": 1, "text": "BUILDING LEGACY", "align": "right" },
+        { "type": "heading", "level": 2, "text": "Since 1954", "align": "right" }
+      ] },
+    { "height": "small", "width": "wide",
+      "rows": [ [
+        { "span": 6, "blocks": [
+          { "type": "text", "paragraphs": ["Placeholder text for the first paragraph."] },
+          { "type": "line" },
+          { "type": "text", "paragraphs": ["Placeholder text for the second paragraph."] }
+        ] },
+        { "span": 6, "blocks": [ { "type": "gallery", "count": 3 } ] }
+      ] ] },
+    { "height": "small", "width": "wide",
+      "rows": [ [
+        { "span": 6, "blocks": [ { "type": "image" } ] },
+        { "span": 6, "blocks": [
+          { "type": "text", "paragraphs": ["Placeholder text for the first paragraph."] },
+          { "type": "line" },
+          { "type": "text", "paragraphs": ["Placeholder text for the second paragraph."] }
+        ] }
+      ] ] },
+    { "height": "small", "width": "wide",
+      "rows": [ [
+        { "span": 4, "blocks": [ { "type": "text", "paragraphs": ["Placeholder text."] } ] },
+        { "span": 8, "blocks": [
+          { "type": "text", "paragraphs": ["Placeholder text for the first paragraph."] },
+          { "type": "line" },
+          { "type": "text", "paragraphs": ["Placeholder text for the second paragraph."] }
+        ] }
+      ] ] },
+    { "height": "small", "width": "wide",
+      "rows": [ [
+        { "span": 6, "blocks": [
+          { "type": "text", "paragraphs": ["Placeholder text for the first paragraph."] },
+          { "type": "line" },
+          { "type": "text", "paragraphs": ["Placeholder text for the second paragraph."] }
+        ] },
+        { "span": 6, "blocks": [ { "type": "gallery", "count": 3 } ] }
+      ] ] },
+    { "height": "small", "width": "wide",
+      "rows": [ [
+        { "span": 6, "blocks": [ { "type": "image" } ] },
+        { "span": 6, "blocks": [
+          { "type": "text", "paragraphs": ["Placeholder text for the first paragraph."] },
+          { "type": "line" },
+          { "type": "text", "paragraphs": ["Placeholder text for the second paragraph."] }
+        ] }
+      ] ] },
+    { "height": "small", "width": "wide",
+      "blocks": [
+        { "type": "heading", "level": 2, "text": "Our Team" },
+        { "type": "text", "paragraphs": ["Foundation is the philanthropic arm of Williams Realty & Building Company and its affiliated companies."] }
+      ] },
+    { "height": "medium",
+      "blocks": [
+        { "type": "summary", "source": "/the-stack", "design": "grid", "ratio": "2:3", "show": ["thumbnail", "title", "excerpt"], "count": 2 }
+      ] }
+  ]
+}

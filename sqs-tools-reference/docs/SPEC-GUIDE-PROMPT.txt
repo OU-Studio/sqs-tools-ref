@@ -1,0 +1,16 @@
+Output ONLY a JSON page spec: {"title": str, "sections": [Section]}.
+Section: {height?, width?, background?, align?, valign?, theme?, backgroundImageId?} plus EITHER "blocks":[Block] (one full-width row) OR "rows":[[{"span":1-12,"blocks":[Block]}]] (spans in a row must sum to 12).
+height: small | medium | large
+width: narrow | medium | wide
+background: full-bleed | inset
+align: left | center
+valign: top | middle | bottom
+theme: none | white | white-bold | light | light-bold | bright | bright-inverse | dark | dark-bold | black | black-bold
+Blocks: {"type":"heading", text, level?, align?}  {"type":"text", paragraphs, align?}  {"type":"code", html}  {"type":"button", text, link?, align?, size?}  {"type":"spacer", size?}  {"type":"image", imageId?, layout?, title?, subtitle?}  {"type":"gallery", collectionId?, count?}  {"type":"quote", quote, source?}  {"type":"line"}  {"type":"accordion", items, open?, multiple?}  {"type":"scrolling", items, speed?, direction?}  {"type":"markdown", markdown}  {"type":"embed", url}  {"type":"video", url, autoplay?, loop?, muted?}  {"type":"map", lat, lng, zoom?, height?}  {"type":"form", align?, name?, email?, button?, message?, formId?}  {"type":"newsletter", title?, description?, button?, disclaimer?}  {"type":"social", align?, size?, networks?, urls?, accounts?}  {"type":"summary", source, design?, ratio?, show?, count?, columnWidth?, gutter?, header?, align?}
+Summary block pulls from a blog/collection: {"type":"summary","source":"/the-stack","design":"grid|list|carousel|columns","ratio":"auto|1:1|3:2|2:3|4:3|3:4|16:9|2.4:1","show":["thumbnail","title","excerpt","readMore","date","categories"],"count":1-30,"columnWidth":50-600,"gutter":0-100,"header":"text"}. Source is the collection url path.
+Text paragraphs are strings (inline **bold**, *italic*, ~~strike~~, [label](url)) or objects: {"text","size":"large|small","color":"accent|lightAccent|darkAccent|white|black|#rrggbb","align":"left|center|right|justify","indent":1-6,"highlight":true,"scaled":true} or {"bullets":[..]} or {"numbered":[..]} or {"quote":".."}.
+Code block: {"type":"code","html":"<div>..</div>"}. Images: {"type":"image","layout":..} needs no id - the site placeholder image is used for every image block, gallery ({"type":"gallery","count":12}) and section {"backgroundImage":true}; if there is no placeholder, they are skipped.
+Other blocks: quote {"quote","source"}; line {}; accordion {"items":[{"title","description"}]}; scrolling {"items":["text",..]}; markdown {"markdown"}; embed {"url"}; video {"url"}; map {"lat","lng","zoom"}; form {"email"?,"button"?,"message"?}; newsletter {"title","description","button"}; social {"networks"?:["facebook","instagram"],"urls"?:{"facebook":"https://..."}}.
+To create a NEW blog with posts: {"blog":{"title":str,"layout"?:"masonry|side-by-side","posts":[{"title","tags"?,"categories"?,"excerpt"?,"draft"?,"thumbnail"?:true,"blocks":[Block]}]}}.
+To add a post to an existing blog instead of a page: {"post":{"blog":"/the-stack","title":str,"tags"?:[],"categories"?:[],"excerpt"?:str,"draft"?:bool,"thumbnail"?:true,"blocks":[Block]}} (or "rows" as in sections).
+Heading level 1-4. Never invent ids.

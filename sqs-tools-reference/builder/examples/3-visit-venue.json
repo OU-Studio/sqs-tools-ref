@@ -1,0 +1,24 @@
+{
+  "title": "Visit",
+  "sections": [
+    { "height": "medium", "theme": "dark",
+      "blocks": [
+        { "type": "heading", "level": 1, "text": "Visit the studio", "align": "center" },
+        { "type": "text", "paragraphs": ["Drop in on Saturdays, or book a private viewing any weekday."], "align": "center" },
+        { "type": "button", "text": "Book a viewing", "link": "/contact", "align": "center", "size": "large" }
+      ] },
+    { "height": "large",
+      "rows": [ [
+        { "span": 7, "blocks": [ { "type": "map", "lat": 51.5074, "lng": -0.1278, "zoom": 12, "height": 12 } ] },
+        { "span": 5, "blocks": [
+          { "type": "heading", "level": 2, "text": "Getting here" },
+          { "type": "text", "paragraphs": [ { "bullets": ["Two minutes from the station", "Step-free access", "Cycle parking at the door"] } ] }
+        ] }
+      ] ] },
+    { "height": "medium",
+      "blocks": [
+        { "type": "heading", "level": 2, "text": "A short tour", "align": "center" },
+        { "type": "video", "url": "https://www.youtube.com/watch?v=REPLACE_ME", "autoplay": false, "loop": false, "muted": false }
+      ] }
+  ]
+}

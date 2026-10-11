@@ -1,0 +1,29 @@
+{
+  "title": "Builder Test 1",
+  "sections": [
+    { "height": "small", "theme": "dark",
+      "blocks": [ { "type": "heading", "level": 2, "text": "TEST A: spacer (a big gap should sit between the two lines below)", "align": "center" } ] },
+    { "height": "medium",
+      "blocks": [
+        { "type": "text", "paragraphs": ["Line ABOVE the spacer."] },
+        { "type": "spacer", "size": 8 },
+        { "type": "text", "paragraphs": ["Line BELOW the spacer."] }
+      ] },
+    { "height": "small", "theme": "light",
+      "blocks": [ { "type": "heading", "level": 2, "text": "TEST B: button sizes, alignment and link types", "align": "center" } ] },
+    { "height": "medium",
+      "rows": [ [
+        { "span": 4, "blocks": [ { "type": "button", "text": "Small left, internal", "size": "small", "align": "left", "link": "/studio-home" } ] },
+        { "span": 4, "blocks": [ { "type": "button", "text": "Medium center, external", "size": "medium", "align": "center", "link": "https://example.com" } ] },
+        { "span": 4, "blocks": [ { "type": "button", "text": "Large right, no link", "size": "large", "align": "right" } ] }
+      ] ] },
+    { "height": "small", "theme": "light",
+      "blocks": [ { "type": "heading", "level": 2, "text": "TEST C: section settings", "align": "center" } ] },
+    { "height": "large", "width": "narrow", "valign": "top", "align": "left", "theme": "black-bold",
+      "blocks": [ { "type": "heading", "level": 3, "text": "Large height, narrow width, top-left, black-bold" }, { "type": "text", "paragraphs": ["Content should hug the top-left in a tall, narrow section."] } ] },
+    { "height": "medium", "width": "medium", "valign": "bottom", "theme": "bright",
+      "blocks": [ { "type": "heading", "level": 3, "text": "Medium width, bottom-aligned, bright theme" } ] },
+    { "height": "small", "background": "inset", "theme": "dark-bold", "width": "wide",
+      "blocks": [ { "type": "heading", "level": 4, "text": "Heading level 4, inset background, dark-bold", "align": "right" } ] }
+  ]
+}

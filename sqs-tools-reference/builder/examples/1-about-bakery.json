@@ -1,0 +1,21 @@
+{
+  "title": "About",
+  "sections": [
+    { "height": "medium", "theme": "light",
+      "blocks": [
+        { "type": "heading", "level": 1, "text": "Our story", "align": "center" },
+        { "type": "text", "paragraphs": ["We have baked bread on the same street since 2009.", "Everything is made by hand, every morning, before the sun comes up."], "align": "center" }
+      ] },
+    { "height": "medium",
+      "rows": [ [
+        { "span": 6, "blocks": [ { "type": "image", "layout": "poster" } ] },
+        { "span": 6, "blocks": [
+          { "type": "heading", "level": 2, "text": "Opening hours" },
+          { "type": "text", "paragraphs": [ { "bullets": ["Tuesday to Friday: 7am to 3pm", "Saturday: 8am to 2pm", "Sunday and Monday: closed"] } ] },
+          { "type": "button", "text": "Order online", "link": "/order", "align": "left", "size": "medium" }
+        ] }
+      ] ] },
+    { "height": "small", "theme": "dark",
+      "blocks": [ { "type": "quote", "quote": "The best sourdough in the city, and the kindest people behind the counter.", "source": "A regular customer" } ] }
+  ]
+}

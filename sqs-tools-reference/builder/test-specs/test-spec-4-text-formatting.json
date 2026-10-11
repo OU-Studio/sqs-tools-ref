@@ -1,0 +1,23 @@
+{
+  "title": "Builder Test 4 (text + code)",
+  "sections": [
+    { "height": "medium", "width": "medium",
+      "blocks": [
+        { "type": "heading", "level": 2, "text": "Text formatting test" },
+        { "type": "text", "paragraphs": [
+          "Inline: **bold**, *italic*, ~~strikethrough~~ and a [link](https://example.com).",
+          { "text": "Large accent-coloured paragraph", "size": "large", "color": "accent" },
+          { "text": "Small paragraph", "size": "small" },
+          { "text": "Centered paragraph", "align": "center" },
+          { "text": "Custom red text", "color": "#d1241c" },
+          { "text": "Highlighted words", "highlight": true },
+          { "text": "Indented level 2", "indent": 2 },
+          { "bullets": ["First bullet", "Second bullet"] },
+          { "numbered": ["First number", "Second number"] },
+          { "quote": "A block quote." }
+        ] },
+        { "type": "text", "paragraphs": [ { "text": "SCALED TEXT", "scaled": true } ] },
+        { "type": "code", "html": "<p style=\"padding:12px;background:#eee\">Code block: this paragraph came from a Code block.</p>" }
+      ] }
+  ]
+}

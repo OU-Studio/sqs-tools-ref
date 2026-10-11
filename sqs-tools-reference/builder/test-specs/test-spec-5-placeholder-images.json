@@ -1,0 +1,14 @@
+{
+  "title": "Builder Test 5 (placeholder images)",
+  "sections": [
+    { "height": "medium", "backgroundImage": true, "theme": "dark",
+      "blocks": [ { "type": "heading", "level": 2, "text": "Section background uses template-placeholder.jpg", "align": "center" } ] },
+    { "height": "medium",
+      "rows": [ [
+        { "span": 6, "blocks": [ { "type": "image", "layout": "inline" } ] },
+        { "span": 6, "blocks": [ { "type": "image", "layout": "card", "title": "Card", "subtitle": "Placeholder image" } ] }
+      ] ] },
+    { "height": "medium",
+      "blocks": [ { "type": "gallery", "count": 8 } ] }
+  ]
+}

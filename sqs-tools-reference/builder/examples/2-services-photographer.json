@@ -1,0 +1,32 @@
+{
+  "title": "Services",
+  "sections": [
+    { "height": "small", "theme": "light-bold",
+      "blocks": [
+        { "type": "heading", "level": 1, "text": "Services", "align": "center" },
+        { "type": "text", "paragraphs": ["Portraits, weddings and product shots, on location or in the studio."], "align": "center" }
+      ] },
+    { "height": "medium", "background": "inset", "theme": "light",
+      "blocks": [
+        { "type": "heading", "level": 2, "text": "Questions people ask", "align": "left" },
+        { "type": "accordion", "items": [
+          { "title": "How long does a session take?", "description": "Most portrait sessions run about an hour." },
+          { "title": "Do you travel?", "description": "Yes, within 100 miles of the studio at no extra charge." },
+          { "title": "When do I get my photos?", "description": "Within two weeks, through a private online gallery." },
+          { "title": "Can I buy prints?", "description": "Yes, prints and albums are available from the gallery." }
+        ], "open": false, "multiple": false }
+      ] },
+    { "height": "medium",
+      "rows": [ [
+        { "span": 6, "blocks": [
+          { "type": "heading", "level": 2, "text": "Stay in touch" },
+          { "type": "newsletter", "title": "Monthly news", "description": "New work, studio dates and the odd discount. No spam.", "button": "Subscribe" }
+        ] },
+        { "span": 6, "blocks": [
+          { "type": "form", "button": "Send", "message": "Tell me about your shoot" }
+        ] }
+      ] ] },
+    { "height": "small",
+      "blocks": [ { "type": "social", "align": "center", "networks": ["instagram", "facebook"] } ] }
+  ]
+}

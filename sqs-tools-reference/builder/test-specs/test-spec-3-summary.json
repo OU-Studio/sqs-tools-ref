@@ -1,0 +1,10 @@
+{
+  "title": "Builder Test 3 (summary)",
+  "sections": [
+    { "height": "medium", "width": "wide",
+      "blocks": [
+        { "type": "heading", "level": 2, "text": "From The Stack", "align": "center" },
+        { "type": "summary", "source": "/the-stack", "design": "grid", "ratio": "1:1", "show": ["thumbnail", "title", "excerpt"], "count": 6 }
+      ] }
+  ]
+}

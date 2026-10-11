@@ -1,0 +1,15 @@
+{
+  "title": "Studio Home",
+  "sections": [
+    { "height": "small", "theme": "dark",
+      "blocks": [ { "type": "heading", "level": 1, "text": "WELCOME", "align": "center" } ] },
+    { "height": "medium",
+      "rows": [ [
+        { "span": 4, "blocks": [ { "type": "heading", "level": 2, "text": "What we do" } ] },
+        { "span": 8, "blocks": [ { "type": "text", "paragraphs": ["We design and build brands, sites and shops.", "Based in the UK, working worldwide."] },
+                                 { "type": "button", "text": "Get in touch", "link": "/contact", "align": "left" } ] }
+      ] ] },
+    { "height": "small", "background": "inset", "theme": "light-bold",
+      "blocks": [ { "type": "heading", "level": 2, "text": "Selected work", "align": "center" }, { "type": "gallery" } ] }
+  ]
+}

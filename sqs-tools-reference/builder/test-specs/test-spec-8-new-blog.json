@@ -1,0 +1,70 @@
+{
+  "blog": {
+    "title": "Builder Test Journal",
+    "layout": "masonry",
+    "posts": [
+      {
+        "title": "First Builder Post",
+        "tags": [
+          "test"
+        ],
+        "categories": [
+          "News"
+        ],
+        "excerpt": "The first post in a blog made by the builder.",
+        "blocks": [
+          {
+            "type": "heading",
+            "text": "Welcome",
+            "level": 2
+          },
+          {
+            "type": "text",
+            "paragraphs": [
+              "This blog and its posts were created by the page builder."
+            ]
+          },
+          {
+            "type": "image",
+            "layout": "inline"
+          }
+        ],
+        "thumbnail": true
+      },
+      {
+        "title": "Second Builder Post",
+        "tags": [
+          "test",
+          "second"
+        ],
+        "excerpt": "A second post with a quote and a button.",
+        "blocks": [
+          {
+            "type": "quote",
+            "quote": "Onwards and upwards.",
+            "source": "Us"
+          },
+          {
+            "type": "button",
+            "text": "Home",
+            "link": "/"
+          }
+        ],
+        "thumbnail": true
+      },
+      {
+        "title": "Third Builder Post",
+        "excerpt": "A short one.",
+        "blocks": [
+          {
+            "type": "text",
+            "paragraphs": [
+              "Short and sweet."
+            ]
+          }
+        ],
+        "thumbnail": true
+      }
+    ]
+  }
+}

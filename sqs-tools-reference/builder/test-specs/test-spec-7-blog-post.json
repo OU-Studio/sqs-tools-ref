@@ -1,0 +1,14 @@
+{
+  "post": {
+    "blog": "/the-stack",
+    "title": "Test Post From Builder",
+    "tags": ["test"],
+    "excerpt": "A test post added by the page builder.",
+    "draft": true,
+    "blocks": [
+      {"type":"heading","text":"Hello from the builder","level":2},
+      {"type":"text","paragraphs":["This post was added by the page builder. **Delete it when done.**"]},
+      {"type":"button","text":"Visit","link":"/"}
+    ]
+  }
+}

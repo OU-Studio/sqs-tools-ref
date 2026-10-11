@@ -1,0 +1,12 @@
+{
+  "title": "Builder Test 2 (image)",
+  "sections": [
+    { "height": "medium",
+      "rows": [ [
+        { "span": 6, "blocks": [ { "type": "image", "imageId": "6a900d5c071d124f895561b5", "layout": "inline" } ] },
+        { "span": 6, "blocks": [ { "type": "image", "imageId": "6a900d5c071d124f895561b5", "layout": "card", "title": "Card layout", "subtitle": "Title and subtitle should show" } ] }
+      ] ] },
+    { "height": "medium", "backgroundImageId": "6a900d5c071d124f895561b5", "theme": "dark",
+      "blocks": [ { "type": "heading", "level": 2, "text": "Section with a background image", "align": "center" } ] }
+  ]
+}

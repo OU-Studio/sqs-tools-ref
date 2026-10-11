@@ -1,0 +1,86 @@
+/* Draft styling for the About page built from 4-about-legacy.json.
+   Colours are estimated from the screenshot (not sampled from the live site).
+   Selectors use the section classes the builder emits (section-height--*, content-width--*).
+   Verify against the live page before relying on it. */
+
+:root {
+  --lg-bg: #161616;
+  --lg-text: #f2f2f2;
+  --lg-gold: #c9a24a;
+}
+
+body {
+  background: var(--lg-bg);
+  color: var(--lg-text);
+}
+
+/* Hero: tall, centred, right-aligned title block */
+.section-height--large {
+  min-height: 60vh;
+  background: var(--lg-bg);
+}
+.section-height--large h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  letter-spacing: 0.04em;
+  text-align: right;
+  color: var(--lg-text);
+  margin: 0;
+}
+.section-height--large h2 {
+  font-style: italic;
+  font-weight: 300;
+  color: var(--lg-gold);
+  text-align: right;
+  margin: 0.25em 0 0;
+}
+
+/* Short wide sections: two-column text and gallery/image rows */
+.section-height--small {
+  padding: 4rem 0;
+  border-top: 1px solid rgba(201, 162, 74, 0.25);
+}
+.section-height--small h2 {
+  color: var(--lg-gold);
+  font-weight: 400;
+  text-transform: none;
+}
+.section-height--small p {
+  line-height: 1.7;
+  color: var(--lg-text);
+  opacity: 0.85;
+}
+
+/* Gold rule between text paragraphs */
+.section-height--small hr,
+.section-height--small .sqs-block-line hr {
+  border: 0;
+  border-top: 2px solid var(--lg-gold);
+  width: 4rem;
+  margin: 1.5rem 0;
+}
+
+/* Images and galleries: square crops, 1:1 */
+.section-height--small img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+/* Summary grid at the bottom */
+.section-height--medium .summary-item-title {
+  color: var(--lg-text);
+}
+.section-height--medium .summary-item-excerpt {
+  color: var(--lg-text);
+  opacity: 0.7;
+}
+
+@media (max-width: 767px) {
+  .section-height--large h1,
+  .section-height--large h2 {
+    text-align: left;
+  }
+  .section-height--small {
+    padding: 2.5rem 1rem;
+  }
+}
